@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root{
+    --moderateViolet:hsl(263, 55%, 52%);
+    --veryDarkGrayishBlue:hsl(217, 19%, 35%);
+    --veryDarkBlackishBlue:hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --lighGray: hsl(0, 0%, 81%);
+    --lightGrayishBlue: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--lightGrayishBlue);
+}
+
+img{
+    border-radius: 50%;
+    max-width: 100%;
+}
+.img_container{
+    width: 39px;
+    padding:6px 5px 6px 6px;
+    margin-left:10px;
+    margin-right: 8px;
+}
+
+.card_container header{
+    display: flex;
+    padding:6px 5px 5px 3px;
+}
+
+.card_container{
+    border-radius:11px;
+}
+
+.daniel_card{
+    background-color: var(--moderateViolet);
+    color: var(--white);
+    background-image: url(/images/bg-pattern-quotation.svg);
+}
+
+.jonathan_card{
+    background-color: var(--veryDarkGrayishBlue);
+    color: var(--white);
+}
+
+.jeanette_card{
+    background-color: var(--white);
+    color: var(--veryDarkGrayishBlue);
+}
+
+.patrick_card{
+    background-color: var(--veryDarkBlackishBlue);
+    color: var(--white);
+}
+
+.kira_card{
+    background-color: var(--white);
+    color: var(--veryDarkGrayishBlue);
+}
+
+.card_container > footer > p{
+    opacity: .7;
+    line-height: 19px;
+}
+
+.card_container span{
+    opacity: .5;
+}
+
+article .text_container{
+    font-size: 20px;
+}
+
+.daniel_card img{
+    border: solid 2px #A775F1;
+}
+
+.jonathan_card img{
+    border: solid 2px var(--white);
+}
+
+.patrick_card img{
+    border: solid 2px var(--moderateViolet);
+}
+
+
+@media only screen and (max-width:1444px){
+    main{
+        display: grid;
+        grid-template-areas: "daniel daniel jonathan kira"
+                              "jeanette patrick patrick kira";
+        width: 80%;
+        grid-template-columns: 18.8rem 17.5rem 18.8rem 18.5rem;
+        grid-template-rows: 20.5rem 20.4rem;
+        gap: 23px;
+        margin: 2rem 5rem 5rem 13.3rem;
+        padding: 30px 0px 5px 5px;
+    }
+    .daniel_card{
+        grid-area: daniel;
+        background-repeat: no-repeat;
+        background-position-x: 310px;
+    }
+    .jonathan_card{
+        grid-area: jonathan;
+    }
+    .kira_card{
+        grid-area: kira;
+    }
+    .patrick_card{
+        grid-area: patrick;
+    }
+    .jeanette_card{
+        grid-area:jeanette;
+    }
+    .daniel_card > header{
+        padding: 19px 0px 0px 15px;
+    }
+    .daniel_card > footer > p{
+        padding: 9px 30px 2px 30px;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .daniel_card > .text_container > p{
+        font-size: 18px;
+        padding: 2px 30px 2px 30px;
+    }
+    .jonathan_card > header{
+        padding: 19px 0px 0px 15px;
+    }
+    .jonathan_card > footer > p{
+        padding: 15px 26px 2px 30px;
+        font-weight: 500;
+        font-size: 13px;
+    }
+    .jonathan_card > .text_container > p{
+        font-size: 17px;
+        padding: 2px 25px 2px 30px;
+    }
+    .jeanette_card > header{
+        padding: 22px 0px 0px 15px;
+    }
+    .jeanette_card > footer > p{
+        padding: 20px 33px 2px 30px;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .jeanette_card > .text_container > p{
+        font-size: 18px;
+        padding: 10px 25px 2px 30px;
+    }
+    .patrick_card > header{
+        padding: 22px 0px 0px 15px;
+    }
+    .patrick_card > footer > p{
+        padding: 15px 33px 2px 30px;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .patrick_card > .text_container > p{
+        font-size: 18px;
+        padding: 0px 17px 2px 30px;
+    }
+    .kira_card > header{
+        padding: 19px 0px 0px 15px;
+    }
+    .kira_card > footer > p{
+        padding: 9px 33px 2px 30px;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .kira_card > .text_container > p{
+        font-size: 18px;
+        padding: 1px 25px 2px 30px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    main{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 0px 0px 0px;
+    }
+    .card_container{
+        width: 95%;
+        padding: 5px;
+        margin-top: 18px;
+    }
+    footer{
+        padding-bottom: 25px;
+    }
+    .card_container header{
+        padding-top: 15px;
+    }
+    .text_container{
+        padding:7px 20px 10px 18px;
+    }
+    .daniel_card{
+        background-repeat: no-repeat;
+        background-position-x: 180px;
+    }
+    .daniel_card > footer > p{
+        padding: 2px 26px 1px 18px;
+    }
+    .jonathan_card > footer > p{
+        padding: 2px 5px 1px 13px;
+    }
+    .jeanette_card > footer > p{
+        padding: 2px 15px 1px 20px;
+    }
+    .patrick_card > footer > p{
+        padding: 2px 12px 1px 20px;
+    }
+    .kira_card > footer > p{
+        padding: 2px 13px 1px 19px;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
