@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [vercel](https://testimonial-grid-section-main-mu.vercel.app/)
+- Live Site URL: [vercel](https://testimonial-grid-section-main-mu.vercel.app/)
 
 ## My process
 
